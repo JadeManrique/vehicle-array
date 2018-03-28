@@ -3,7 +3,7 @@ var vehicle1 = {
     model: "Altima",
     year: 2010,
     miles: 40000,
-    renter: "xXbossmanXx",
+    renter: "The Boss",
     value: 35000
   };
 
@@ -12,7 +12,7 @@ var vehicle2 = {
     model: "Supra",
     year: 1998,
     miles: 14229,
-    renter: "lovely_duck",
+    renter: "Bill Hicks",
     value: 120000
   };
 
@@ -21,7 +21,7 @@ var vehicle3 = {
     model: "Aventador",
     year: 2017,
     miles: 45000,
-    renter: "wuTang",
+    renter: "George Carlin",
     value: 506300
   };
 
@@ -30,7 +30,7 @@ var vehicle4 = {
     model: "250z",
     year: 1972,
     miles: 50000,
-    renter: "oldman_jenkins420",
+    renter: "Jade Manrique",
     value: 42522
   };
 
@@ -39,6 +39,14 @@ var vehicle5 = {
     model: "S3",
     year: 2018,
     miles: 13000,
-    renter: "biscuits'n'butters",
+    renter: "Alex Gibbons",
     value: 43650
   };
+
+let myFleet = [];
+
+myFleet.push(vehicle1, vehicle2, vehicle3, vehicle4, vehicle5);
+
+for (var i = 0; i < myFleet.length; i++) {
+  console.log("The model for " + myFleet[i].renter + " is: " + "\"" + myFleet[i].model + "\".");
+}

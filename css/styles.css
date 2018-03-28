@@ -1,4 +1,11 @@
+h1 {
+  margin: 15px;
+  font-size: 30px;
+}
 
+.box {
+  text-align: center;
+}
 
 @media screen and (max-width: 920px) {
 
