@@ -1,3 +1,6 @@
+$(document).ready( function () {
+
+
 var vehicle1 = {
     manufacturer: "Nissan",
     model: "Altima",
@@ -47,6 +50,15 @@ let myFleet = [];
 
 myFleet.push(vehicle1, vehicle2, vehicle3, vehicle4, vehicle5);
 
+var fullString = "Model: ";
+
 for (var i = 0; i < myFleet.length; i++) {
-  console.log("The model for " + myFleet[i].renter + " is: " + "\"" + myFleet[i].model + "\".");
+  fullString = fullString + myFleet[i].model + ", ";
 }
+
+
+$("#car-display").html(fullString);
+
+
+
+});
